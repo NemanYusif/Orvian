@@ -1,0 +1,6 @@
+{
+  "name": "Orvian",
+  "description": "Orvian - AI Productivity System. Plan your year, manage tasks, control time, and work smarter with AI guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
