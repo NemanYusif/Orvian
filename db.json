@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "superadmin-id-789",
+      "name": "superadmin",
+      "passwordHash": "e34f92a20532a873cb3184398070b4b82a8fa29cf48572c203dc5f0fa6158231",
+      "role": "superadmin",
+      "createdAt": "2026-07-01T14:04:00.098Z",
+      "isBlocked": false
+    },
+    {
+      "id": "admin-id-123",
+      "name": "admin",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "admin",
+      "createdAt": "2026-07-01T14:04:00.098Z",
+      "isBlocked": false
+    },
+    {
+      "id": "user-id-456",
+      "name": "user",
+      "passwordHash": "e606e38b0d8c19b24cf0ee3808183162ea7cd63ff7912dbb22b5e803286b4446",
+      "role": "user",
+      "createdAt": "2026-07-01T14:04:00.098Z",
+      "isBlocked": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "userId": "user-id-456",
+      "title": "Səhər idmanı və qaçış",
+      "description": "Hər gün 30 dəqiqə bədən tərbiyəsi",
+      "date": "2026-07-01",
+      "status": "completed",
+      "createdAt": "2026-07-01T14:04:00.098Z"
+    },
+    {
+      "id": "task-2",
+      "userId": "user-id-456",
+      "title": "React v19 və Vite öyrənilməsi",
+      "description": "Yeni developer alətlərini sınaqdan keçir",
+      "date": "2026-07-01",
+      "status": "pending",
+      "createdAt": "2026-07-01T14:04:00.098Z"
+    },
+    {
+      "id": "task-3",
+      "userId": "user-id-456",
+      "title": "Kitab oxumaq (Atomic Habits)",
+      "description": "Hər gün ən azı 10 səhifə mütaliə",
+      "date": "2026-06-30",
+      "status": "completed",
+      "createdAt": "2026-07-01T14:04:00.098Z"
+    },
+    {
+      "id": "task-4",
+      "userId": "user-id-456",
+      "title": "Gündəlik plan yazmaq",
+      "description": "Dünəndən qalan işlərin təhlili",
+      "date": "2026-06-30",
+      "status": "missed",
+      "createdAt": "2026-07-01T14:04:00.098Z"
+    }
+  ],
+  "sessions": {
+    "1508b05bbc4c04efed27616949c8d5977c2c9496290093bb3e8deb3cbb575553": "admin-id-123"
+  },
+  "chatHistory": []
+}
