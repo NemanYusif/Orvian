@@ -10,7 +10,7 @@ const handleResponse = async (res: Response) => {
 
 export const api = {
   async login(name: string, passwordPlain: string): Promise<{ token: string; user: User }> {
-    const res = await fetch('/api/auth/login', {
+    const res = await fetch("https://orvian-tau.vercel.app/", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, password: passwordPlain }),
@@ -19,7 +19,7 @@ export const api = {
   },
 
   async register(name: string, passwordPlain: string): Promise<{ token: string; user: User }> {
-    const res = await fetch('/api/auth/register', {
+    const res = await fetch('https://orvian-tau.vercel.app/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, password: passwordPlain }),
@@ -28,28 +28,28 @@ export const api = {
   },
 
   async logout(token: string): Promise<void> {
-    await fetch('/api/auth/logout', {
+    await fetch('https://orvian-tau.vercel.app/', {
       method: 'POST',
       headers: { 'Authorization': `Bearer ${token}` },
     });
   },
 
   async getMe(token: string): Promise<{ user: User }> {
-    const res = await fetch('/api/auth/me', {
+    const res = await fetch('https://orvian-tau.vercel.app/', {
       headers: { 'Authorization': `Bearer ${token}` },
     });
     return handleResponse(res);
   },
 
   async getTasks(token: string): Promise<Task[]> {
-    const res = await fetch('/api/tasks', {
+    const res = await fetch('https://orvian-tau.vercel.app/', {
       headers: { 'Authorization': `Bearer ${token}` },
     });
     return handleResponse(res);
   },
 
   async createTask(token: string, title: string, description: string, date: string): Promise<Task> {
-    const res = await fetch('/api/tasks', {
+    const res = await fetch('https://orvian-tau.vercel.app/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
